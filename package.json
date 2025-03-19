@@ -1,9 +1,12 @@
-﻿{
+{
   "name": "headsup-integration",
   "version": "1.0.0",
   "description": "HeadsUp Health SSO integration",
-  "main": "index.js",
+  "main": "get-headsup-sso.js",
   "dependencies": {
     "axios": "^0.27.2"
+  },
+  "scripts": {
+    "build": "echo 'No build step required'"
   }
 }
