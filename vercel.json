@@ -1,15 +1,18 @@
-﻿{
-    "version": 2,
-    "builds": [
-        {
-            "src": "api/get-headsup-sso.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "api/get-headsup-sso.js"
-        }
-    ]
+{
+  "version": 2,
+  "rewrites": [
+    { "src": "/", "dest": "/index.html" }
+  ],
+  "builds": [
+    {
+      "src": "api/get-headsup-sso.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/get-headsup-sso.js"
+    }
+  ]
 }
